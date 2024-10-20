@@ -1,0 +1,73 @@
+
+/* RESET global */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+/* FIM RESET GLOBAL */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 125px);
+    grid-gap: 10px;
+    height: 100%;}
+    
+.card {
+    width: 125px;
+    height: 125px;
+    background-color: #0063cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 1s;
+    border-radius: 40px;
+}
+
+.card.flipped {
+    background-color: #28A745;
+}
+
+#timer {
+    font-size: 30px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
